@@ -1,0 +1,8 @@
+[Unit]
+Description=Password Decoder
+After=multi-user.target
+[Service]
+ExecStart=/usr/bin/ruby  /ROUTE/password_decoder/index.rb 
+Restart=always
+[Install]
+WantedBy=multi-user.target

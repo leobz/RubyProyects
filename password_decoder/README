@@ -1,0 +1,16 @@
+Password Decoder
+
+El decodificador de contraseña aplica un simple Algoritmo de encriptacion md5
+Ingrese la clave UUID (36 caracteres) de su VM y genere el password.
+Opcionalmente si necesita obtener el password para ser usuario experto
+(mas privilegios) ingrese los cuatro digitos extra en "Challenge Code"
+
+Funcionamiento
+
+Root Password   : La UUID es procesada por un algoritmo md5
+Expert Password : md5 de 4 primeros digitos de UUID + ChallengeCode 
+
+Para ver una demo en un server local:
+
+1-Instalar la gema y correr la aplicación con ´ gem install sinatra ´
+2-´ ruby index.rb ´
